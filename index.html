@@ -7,222 +7,223 @@
                 margin: 0;
                 padding:0;
              
-            }
-            body{
-                height: 100%;
-                width: 100%;
-              background-image: linear-gradient(white,rgb(143, 90, 112));
-               background-repeat: no-repeat;
-            }
-            header{
-                width: 100%;
-                height: 15%;
-                border-bottom: 2px solid black;
-            }
-            .main{
-             height: 100%;
-             border-bottom: 2px solid black;
-            }
-            img{
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                border-color: blue;
-            }
-.profile-part{
-    display: flex;
-    padding: 10px;
- 
-}
-.personal-info{
-    margin-left: 100px;
-    margin-top: 10px;
-    font-size: 40px;
-}
-.side{
-float: left;
-width:15%;
-height: 600px;
-border-right: 2px solid black;
-}
-ul{
-    list-style-type: none;
-       margin-top: 0;
-}
-li{
-height: 80px;
-align-items: center;
-box-sizing: border-box;
-border-bottom: 2px solid black;
-align-content: center;
-font-size: x-large;
+        body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(white, rgb(143, 90, 112));
+  min-height: 100vh;
+  color: #222;
 }
 
-ul li:hover{
-    background-color: gray;
-    color: brown;
-    text-decoration:underline;
-}
-ul li a{
-
-    text-decoration: none;
-
-   
-  
-}
-ul li a:active{
-   color: deepskyblue;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid black;
+  background: rgba(255, 255, 255, 0.7);
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-
-
-.navigation{
-display: grid;
-grid-template-columns: 1fr 2fr;
-}
-span{
-    margin-left:20px;
-    color: coral;
-    cursor: pointer;
-    background-color: transparent;
-    
-}
-.first-muba{
-    font-size: 30px;
-}
-.first-muba:hover{
-     cursor: pointer;
-    font-size: 2rem;
-    transform: scale(1.3),translateX(3px),translateY(3px);
-     outline:chartreuse;
-     text-shadow: 2px rgb(173, 7, 7);
-}
-.links{
-    float: right;
-    color: black;
-    display: flex;
-   
-    justify-content: space-around;
-
-}
-.butun{
-    color: white;
-    background-color: chocolate;
-    border-radius: 12px;
-    border-color: transparent;
-
-
-     
-}
-.butun:hover{
-background-color: chocolate;
-    opacity: 0.6;
-        transform:scale(1.3);
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid blue;
+  object-fit: cover;
 }
 
-.muba{
-    font-size: 34px;
+header .personal-info {
+  font-size: 1.8rem;
+  color: #333;
 }
-.links a{
-    text-decoration: none;
-    color: black;
-}
-.links a:hover{
-    text-decoration: underline;
-    color:rebeccapurple;
-     transform: scale(1.2);
-   
 
-
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80vh;
 }
-.main-section{
-    height: 370px;
-margin-top:100px;
-display: grid;
-grid-template-columns: 1fr 1fr;
- animation:fadein 2s ease-in-out;
+
+nav.side {
+  flex: 1 1 200px;
+  border-right: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  border-bottom: 2px solid black;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+nav li:hover {
+  background-color: gray;
+  color: brown;
+  text-decoration: underline;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+main {
+  flex: 3 1 500px;
+  padding: 2rem;
+  animation: fadein 2s ease-in-out;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.class2 {
+  flex: 1;
+  min-width: 250px;
+}
+
+.class2 h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.class2 h1 {
+  font-size: 2rem;
+  color: coral;
+  margin-bottom: 1rem;
+}
+
+.class2 p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.cv-buttuon {
+  background-color: peru;
+  border-radius: 5px;
+  color: white;
+  width: 120px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cv-buttuon:hover {
+  background-color: chocolate;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .social-container {
-    display: flex;
-    gap: 30px;
-
-}
-.social-container a{
-    background-color: white;
-    padding: 1rem;
-    border-radius: 50px;
-    height: 64px;
-    width: 64px;
-    box-sizing: border-box;
-    flex: 0;
- 
-    place-items:center;
-    box-shadow: 0 5px rgba(0,0,0,0.5);
-
-  
-}
-.social-container a svg{
-    height:30px;
-
-}
-.social-container a:hover{
-cursor: pointer;
-background-color: aqua;
-transform:scale(1.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 1rem;
 }
 
-@keyframes fadein{
-    0%{
-        opacity: 0;
-        transform:translateY(-30px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.img-container{
-    width: 40px;
-}
-.cv-buttuon{
-    background-color: peru;
-    border-radius: 3px;
-    color: white;
-    width:100px;
-    margin-top: 20px;
-    border-color: transparent;
-
-}
-.cv-buttuon:hover{
-    background-color: chocolate;
-    opacity: 0.6;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transform: scale(1.2);
-     
-
-}
-.class2 h3 span{
-    animation-delay: 0.5s;
-}
-.class2 span{
-    transform: translateY(-50px);
-    animation: slideIn 1s ease-in-out forwards;
-}
-@keyframes slidein{
-    0%{
-opacity: 0;
-transform: translateY(-50px);
-    }100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
-}
-.class2{
-    margin-left: 50px;
+.social-container a {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
+.social-container a:hover {
+  background-color: aqua;
+  transform: scale(1.2);
+}
+
+.social-container a svg {
+  height: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .personal-info {
+    font-size: 1.4rem;
+  }
+
+  nav.side {
+    flex: 1 1 100%;
+    border-right: none;
+    border-bottom: 2px solid black;
+  }
+
+  nav li {
+    display: inline-block;
+    border: none;
+    padding: 0.8rem 1rem;
+  }
+
+  main {
+    flex: 1 1 100%;
+  }
+
+  .main-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cv-buttuon {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  header img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .social-container a {
+    width: 50px;
+    height: 50px;
+    padding: 0.8rem;
+  }
+
+  .class2 h1 {
+    font-size: 1.5rem;
+  }
+
+  .class2 p {
+    font-size: 0.9rem;
+  }
+}
 
         </style>
         
@@ -251,27 +252,78 @@ transform: translateY(-50px);
             </nav>
         </section>
         
-        <main>
-        <div class="main-section">
-          <div class="class2">
-            <h3>Hey I'm <span class="Muba">mubarek</span></h3>
-            <h1>i'm a <span class="youtuber">Web Developer</span></h1>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-         <div class="social-container">
-            <a href="https://github.com/@mubarekcr7" target="_blank" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
-            <a href="https://facebook.com/Mubarekmohammed2026"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg> </a>
-           <a href="https://TikTok.com/@muba.royal2" target="_blank" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>    
-           <a href="https://x.com/@Mu72727Mubarek"  target="_blank"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg></a> 
-         </div>
-           <button class="cv-buttuon">dowload cv</button>
-        
-        </div>
-      
-       </main>
+       <main>
+  <div class="main-section">
+    <div class="class2">
+      <h3>Hey, I'm <span class="Muba">Mubarek</span></h3>
+      <h1>I'm a <span class="youtuber">Web Developer</span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-         
+      <div class="social-container">
+        <a href="https://github.com/@mubarekcr7" target="_blank" title="GitHub">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 
+              0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 
+              0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61 
+              0 0-.822-1.555-.822-3.112 
+              0-2.165 1.232-3.691 2.472-4.212 
+              .438-.326.928-.482 1.47-.482.9 0 1.637.342 2.112.86 
+              .477-.118.938-.232 1.37-.316-.093.472-.144.965-.144 1.478 
+              0 1.676.91 2.983 2.363 3.582.69.293 1.478.438 2.31.438 
+              .863 0 1.66-.156 2.39-.443.66.47 1.342.955 2.074 1.44-.674 1.053-1.47 1.988-2.38 2.793 
+              -.91.81-2.07 1.503-3.48 1.935-.57.172-1.17.33-1.79.45 
+              -.03.01-.07.01-.1.01Z"/>
+          </svg>
+        </a>
+
+        <a href="https://facebook.com/Mubarekmohammed2026" target="_blank" title="Facebook">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58
+            c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103
+            a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 
+            26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309
+            a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297
+            h3.919l-.386 2.103-.287 1.564h-3.246v8.245
+            C19.396 23.238 24 18.179 24 12.044
+            c0-6.627-5.373-12-12-12s-12 5.373-12 12
+            c0 5.628 3.874 10.35 9.101 11.647Z"/>
+          </svg>
+        </a>
+
+        <a href="https://tiktok.com/@muba.royal2" target="_blank" title="TikTok">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.525.02c1.31-.02 2.61-.01 
+            3.91-.02.08 1.53.63 3.09 1.75 4.17 
+            1.12 1.11 2.7 1.62 4.24 1.79v4.03
+            c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93
+            -.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94
+            -1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03
+            -2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49
+            .18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72
+            .02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37
+            -.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61
+            .24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61
+            .19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+          </svg>
+        </a>
+
+        <a href="https://x.com/@Mu72727Mubarek" target="_blank" title="X">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824
+            L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318
+            L16.749 24h6.993zm-2.837 3.299-.929-1.329
+            L3.076 1.56h3.182l5.965 8.532.929 1.329
+            7.754 11.09h-3.182z"/>
+          </svg>
+        </a>
+      </div>
+
+      <button class="cv-buttuon">Download CV</button>
+    </div>
+  </div>
+</main>
+
     </body>
-
 </html>
+
 
