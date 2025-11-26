@@ -1,0 +1,130 @@
+/* ================= HEADER ================= */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    background: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Header Icons */
+.menu-icon { width: 28px; cursor: pointer; }
+.logo { width: 110px; }
+.extra-icons { width: 30px; cursor: pointer; }
+.user-icon { width: 38px; border-radius: 50%; }
+
+/* Search Bar */
+.search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+}
+.search-input { width: 100%; max-width: 350px; padding: 6px 12px; }
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    position: fixed;
+    top: 60px; /* height of header */
+    left: 0;
+    width: 220px; 
+    height: calc(100vh - 60px); /* full height minus header */
+    background: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* space between groups of items */
+    overflow-y: auto;
+}
+
+/* Sidebar items */
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.2s;
+    gap: 12px; 
+}
+
+
+.sidebar-item:hover {
+    background-color: #e0dbd6;
+    transform: scale(1.03);
+}
+
+
+.sidebar-item + .sidebar-item {
+    margin-top: 12px;
+}
+
+
+.sidebar-item img { width: 25px; height: 25px; }
+
+
+main {
+    margin-top: 60px; 
+    margin-left: 240px;
+    padding: 20px;
+}
+
+
+.vidio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+
+.video-card {
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-card:hover { 
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.channel-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.video-title { font-size: 15px; font-weight: 600; margin: 0; }
+.channel-name, .views { font-size: 13px; color: gray; margin: 0; }
+
+
+@media (max-width: 1200px) {
+    main { margin-left: 220px; }
+}
+
+@media (max-width: 992px) {
+    main { margin-left: 0; padding: 15px; }
+    .sidebar { display: none; } 
+    .search-input { max-width: 100%; }
+}
+
+@media (max-width: 768px) {
+    .search-bar { max-width: 100%; padding: 0 5px; }
+    .extra-icons { width: 25px; }
+    .user-icon { width: 32px; }
+}

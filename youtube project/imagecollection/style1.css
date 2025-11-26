@@ -1,0 +1,92 @@
+.thumblain{
+   width: 309px;
+    display: block;
+    height: 180px;
+
+}
+.search-bar{
+    width: 100px;
+    height: 30px;
+    margin-right: 50px;
+    margin-top: 1px;
+   
+}
+.vidio-title{
+   width: 300px;
+   font-size: 14px;
+   height: 12px;
+     display: block;
+}
+.vidio-author{
+    margin-top: 30px;
+    display:block;
+     margin-left: 10px;
+  
+}
+.videio-status{
+    display:inline-block;
+    margin-left: 10px;
+ 
+    color: gray;
+    font-size: 12px;
+}
+.vidieo-preview1{
+    width: 300px;
+    height: 180px;
+    display: inline-block;
+  
+}
+.vidieo-preview2{
+    width: 300px;
+    height: 180px;
+    display: inline-block;
+  
+}
+.thumblain2{
+     width: 309px;
+    display: block;
+     height: 180px;
+      margin-left: 12px;
+}
+.thumblain3{
+    width: 309px;
+    height: 180px;
+    display: inline-block;
+     margin-top: 20px;
+      margin-left: 20px;
+    
+}
+.vidieo-preview3{
+    width: 300px;
+    height: 180px;
+    display: inline-block;
+
+    
+}
+.thumblain4{
+     width: 309px;
+     height: 180px;
+    display: block;
+     margin-left: 30px;
+    
+}
+.vidieo-preview4{
+    width: 300px;
+    height: 180px;
+    display: inline-block;
+
+}
+.thumblain5{
+     width: 309px;
+         height: 180px;
+      display: inline-block;
+       margin-left: 118px;
+    
+}
+.vidieo-preview5{
+    width: 300px;
+    height: 180px;
+    display: inline-block;
+   
+   
+}
