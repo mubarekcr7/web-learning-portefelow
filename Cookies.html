@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Cookie Management</title>
+    <style>
+    .set{
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .get{
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .delete{
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+    }
+</style>
+    </head>
+<body>
+
+<button onclick="setCookie()" class="set">Set Cookie</button>
+<button onclick="alert(getCookie())" class="get">Get Cookie</button>
+<button onclick="deleteCookie()" class="delete">Delete Cookie</button>
+
+<script>
+
+function setCookie() {
+    document.cookie = "user=Mubarek; max-age=" + (5 * 24 * 60 * 60) + "; path=/";
+    alert("Cookie set!");
+}
+
+
+function getCookie() {
+    let cookies = document.cookie.split("; ");
+    for (let c of cookies) {
+        if (c.startsWith("user=")) {
+            return c.split("=")[1];
+        }
+    }
+    return "Cookie not found";
+}
+
+
+function deleteCookie() {
+    document.cookie = "user=; max-age=0; path=/";
+    alert("Cookie deleted!");
+}
+</script>
+
+</body>
+</html>
